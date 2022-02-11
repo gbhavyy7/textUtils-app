@@ -82,7 +82,7 @@ const TextForm = (props) => {
           <div className="container my-3" style={{color:props.mode==='light'?'#212529':'white'}}>
             <h1>Your text summary</h1>
             {/*split will return an array of all words and spaces*/ /*filter will filter out empty spaces from array*/}
-            <p>{text.split(" ").filter((element)=>element.length!==0).length} words and {text.length} characters</p>
+            <p>{text.split(/\s+/).filter((element)=>element.length!==0).length} words and {text.length} characters</p>
             <p> {.008 * text.split(" ").filter((element)=>element.length!==0).length} minutes read (time needed to read 1 word is 0.008 min)</p>
             <h2>Preview</h2>
             {text.length>0?text:'Nothing to preview'}

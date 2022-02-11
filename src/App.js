@@ -50,10 +50,10 @@ function App() {
         <div className="container my-3">
           <Switch>
             <Route exact path="/about">
-              <About mode={mode} />
+              <About mode = {mode} />
             </Route>
             <Route path="/">
-              <TextForm heading="Enter Some Text" mode={mode} showAlert={showAlert} />
+              <TextForm heading="Enter Some Text" mode = {mode} showAlert={showAlert} />
             </Route>
           </Switch>
         </div>
